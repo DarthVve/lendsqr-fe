@@ -1,0 +1,25 @@
+.sb-section {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        margin: 0;
+    }
+
+    .sb-section-header {
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #545F7D;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .sb-section-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+};

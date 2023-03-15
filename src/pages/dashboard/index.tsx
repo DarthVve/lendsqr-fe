@@ -4,7 +4,7 @@ import { Sidebar } from '../../containers';
 
 const Dashboard = () => {
     return (
-        <div>
+        <div className='dashboard'>
             <Navbar />
             <Sidebar />
         </div>
