@@ -1,3 +1,8 @@
 .dashboard {
-    background: #E5E5E5;
+    background: #FBFBFB;
+
+    .dashboard-content {
+        display: flex;
+        flex-direction: row;
+    }
 };

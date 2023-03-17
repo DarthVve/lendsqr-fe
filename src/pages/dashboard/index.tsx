@@ -1,12 +1,15 @@
 import './dashboard.scss';
 import { Navbar } from '../../components';
-import { Sidebar } from '../../containers';
+import { Sidebar, Users } from '../../containers';
 
 const Dashboard = () => {
     return (
         <div className='dashboard'>
             <Navbar />
-            <Sidebar />
+            <div className='dashboard-content'>
+                <Sidebar />
+                <Users />
+            </div>
         </div>
     )
 };

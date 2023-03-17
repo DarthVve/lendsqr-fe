@@ -1,0 +1,36 @@
+.user-details-modal {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 20px;
+    width: 100%;
+    max-width: 180px;
+    height: 130px;
+    background: #FFFFFF;
+    border: 1px solid rgba(84, 95, 125, 0.04);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    z-index: 3;
+    border-radius: 4px;
+    padding: 20px 21px;
+    transform: translateY(-130%) translateX(608%);
+    position: absolute;
+
+    .udm-menu-option {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        cursor: pointer;
+        align-items: center;
+
+        p {
+            margin: 0;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #545F7D;
+        }
+    }
+};

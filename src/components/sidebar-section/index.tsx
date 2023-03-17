@@ -1,6 +1,5 @@
 import './sidebarSection.scss';
 import { home } from '../../assets/icons';
-import { FC } from 'react';
 
 interface SidebarSectionProps { 
     tabs: { title: string, icon: string }[];

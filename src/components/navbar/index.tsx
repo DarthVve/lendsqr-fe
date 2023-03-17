@@ -4,7 +4,7 @@ import { arrowDown, bell, searchIcon } from '../../assets/icons';
 
 const Navbar = () => {
     return (
-        <div className='navbar'>
+        <div className='navBar'>
             <img className='nav-logo' src={logo} alt='Lendsqr Logo' loading='lazy' />
             <article className='nav-search'>
                 <input className='search' type='text' name='search' placeholder='Search for anything' />
