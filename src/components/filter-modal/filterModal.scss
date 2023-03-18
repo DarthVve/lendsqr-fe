@@ -1,0 +1,109 @@
+.filter-modal {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 270px;
+    height: 600px;
+    background: #FFFFFF;
+    border: 1px solid rgba(84, 95, 125, 0.14);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 30px 20px;
+    transform: translateY(15px) translateX(-15px);
+
+    .fm-form {
+        .fm-form-field {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            label {
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                color: #545F7D;
+            }
+
+            select {
+                cursor: pointer;
+            }
+
+            select, input {
+                width: 100%;
+                max-width: 230px;
+                height: 40px;
+                background: #FFFFFF;
+                border: 1px solid #213F7D;
+                box-sizing: border-box;
+                border-radius: 8px;
+                padding: 0 20px;
+                margin-top: 6px;
+
+                select > option .fm-select-text {
+                    font-family: 'Work Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #545F7D;
+                    opacity: 0.7;
+                }
+            }
+
+            ::-webkit-input-placeholder {
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: #545F7D;
+                opacity: 0.7;
+            }
+        }
+
+        .fm-form-btns {
+            display: flex;
+            flex-direction: row;
+            gap: 14px;
+            margin-top: 10px;
+
+            .fm-form-btn-reset {
+                width: 100%;
+                max-width: 98px;
+                height: 40px;
+                background: #FFFFFF;
+                border: 1px solid #545F7D;
+                box-sizing: border-box;
+                border-radius: 8px;
+
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16px;
+                color: #545F7D;
+                text-align: center;
+            }
+
+            .fm-form-btn-filter {
+                width: 100%;
+                max-width: 98px;
+                height: 40px;
+                background: #39CDCC;
+                border: 1px solid #39CDCC;
+                box-sizing: border-box;
+                border-radius: 8px;
+            
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FFFFFF;
+                text-align: center;
+            }
+        }
+    }
+};

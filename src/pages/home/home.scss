@@ -1,0 +1,144 @@
+.home {
+    display: flex;
+    place-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    margin-top: 15px;
+
+    .landing {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .lendsqr {
+            display: flex;
+            flex-direction: column;
+            padding: 196px 69px;
+            gap: 139px;
+        
+            .lendsqr-logo {
+                width: 100%;
+                max-width: 174px;
+                height: 100%;
+                max-height: 36px;
+                margin-left: 30px;
+            }
+        }
+
+        .landing-content {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            width: 704px;
+            height: 100vh;
+            padding-top: 250px;
+            padding-left: 100px;
+            box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+
+            .lc-text1 {
+                font-family: 'Avenir Next Cyr', 'Avenir Next', 'Avenir Next LT Pro', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 55px;
+                letter-spacing: -0.04em;
+                color: #213F7D;
+                margin-bottom: 1px;
+            }
+
+            .lc-text2 {
+                font-family: 'Avenir Next Cyr', 'Avenir Next', 'Avenir Next LT Pro', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 27px;
+                color: #545F7D;
+                margin-bottom: 60px;
+            }
+
+            .lc-input1, .lc-input2 {
+                width: 447px;
+                max-width: 100%;
+                height: 50px;
+                background: #FFFFFF;
+                border: 2px solid rgba(84, 95, 125, 0.15);
+                border-radius: 5px;
+                box-sizing: border-box;
+                padding-left: 16px;
+                margin-bottom: 24px;
+            } 
+
+            .lc-input2[type="password"] {
+                margin-bottom: 12px;
+            }
+
+            .lc-input1::placeholder, .lc-input2::placeholder {
+                font-family: 'Avenir Next Cyr', 'Avenir Next', 'Avenir Next LT Pro', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                color: #545F7D;
+                opacity: 0.6;
+            }
+
+            .toggle {
+                cursor: pointer;
+                width: 49px;
+                height: 13px;
+                font-family: 'Avenir Next Cyr', 'Avenir Next', 'Avenir Next LT Pro', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #39CDCC;
+                z-index: 1;
+                transform: translateY(-45px)  translateX(382px);
+            }
+
+            .lc-text3 {
+                font-family: 'Avenir Next Cyr', 'Avenir Next', 'Avenir Next LT Pro', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: left;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #39CDCC;
+                margin-bottom: 30px;
+                margin-top: 0;
+                cursor: pointer;
+            }
+
+            .lc-button {
+                width: 447px;
+                max-width: 100%;
+                height: 48px;
+                background: #39CDCC;
+                border-radius: 8px;
+                border-color: transparent;
+                margin-top: 10px;
+                cursor: pointer;
+
+                font-family: 'Avenir Next';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+
+            .lc-button:hover {
+                background: #213F7D;
+                opacity: 0.7;
+            }
+        }
+    }
+};

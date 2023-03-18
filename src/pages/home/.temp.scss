@@ -1,0 +1,157 @@
+/* Mobile styles */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+
+    .landing {
+        width: 100%;
+
+        .lendsqr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 30px;
+
+            .landing-img {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+
+        .landing-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .lc-text1 {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .lc-text2 {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .lc-input1,
+            .lc-input2 {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                box-shadow: 0px 3px 6px #00000029;
+                font-size: 16px;
+            }
+
+            .toggle {
+                text-align: center;
+                cursor: pointer;
+                font-size: 14px;
+            }
+
+            .lc-text3 {
+                text-align: center;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+            .lc-button {
+                background-color: #213F7D;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .home {
+        .landing {
+            width: 70%;
+
+            .lendsqr {
+                margin-bottom: 50px;
+            }
+
+            .landing-content {
+                .lc-text1 {
+                    font-size: 36px;
+                    text-align: left;
+                }
+
+                .lc-text2 {
+                    font-size: 20px;
+                    text-align: left;
+                }
+
+                .lc-input1,
+                .lc-input2 {
+                    font-size: 20px;
+                }
+
+                .toggle {
+                    font-size: 18px;
+                }
+
+                .lc-text3 {
+                    font-size: 16px;
+                }
+
+                .lc-button {
+                    font-size: 20px;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .home {
+        .landing {
+            width: 50%;
+
+            .landing-content {
+                .lc-text1 {
+                    font-size: 48px;
+                }
+
+                .lc-text2 {
+                    font-size: 24px;
+                }
+
+                .lc-input1,
+                .lc-input2 {
+                    font-size: 24px;
+                    padding: 15px;
+                }
+
+                .toggle {
+                    font-size: 20px;
+                }
+
+                .lc-text3 {
+                    font-size: 18px;
+                }
+
+                .lc-button {
+                    font-size: 24px;
+                    padding: 15px;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+};

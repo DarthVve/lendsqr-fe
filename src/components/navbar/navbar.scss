@@ -1,0 +1,104 @@
+.navBar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    max-width: 2500px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav-logo {
+        width: 100%;
+        max-width: 145px;
+        height: 30px;
+        margin-left: 30px;
+        margin-right: 168px;
+    }
+
+    .nav-search {
+        display: flex;
+        flex-direction: row;
+        background: #FFFFFF;
+        border: 1px solid #213F7D;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 400px;
+        height: 40px;
+        margin-right: 357px;
+
+        .search {
+            border: none;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            padding-left: 20px;
+            width: 100%;
+            max-width: 342px;
+            opacity: 0.5;
+        }
+
+        .search::placeholder {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #545F7D;
+        }
+
+        .search-btn {
+            box-sizing: border-box;
+            background: #39CDCC;
+            width: 100%;
+            max-width: 58px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            text-align: center;
+            padding-top: 5px;
+        }
+    }
+
+    .nav-user-tools {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: safe; 
+
+
+        .docs {
+            margin-right: 50px; 
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #213F7D;
+        }
+
+        .notify-icon {
+            margin-right: 33px;
+        }
+        
+        .avatar {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .username {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #213F7D;
+            margin-right: 10px;
+        }
+
+        .sub-menu {
+            margin-right: 66px;
+            margin-bottom: 15px;
+        }
+    }
+};

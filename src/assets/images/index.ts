@@ -1,0 +1,11 @@
+export { default as logo } from './lendsqr-logo.svg';
+export { default as pablo } from './pablo-sign-in.svg';
+export { default as avi } from './avi.svg';
+export { default as active } from './active.svg';
+export { default as inactive } from './inactive.svg';
+export { default as pending } from './pending.svg';
+export { default as blacklisted } from './blacklisted.svg';
+export { default as avatar } from './avatar.svg';
+export { default as backBtn } from './back-btn.svg';
+export { default as nextPageBtn } from './next-page-btn.svg';
+export { default as prevPageBtn } from './prev-page-btn.svg';
