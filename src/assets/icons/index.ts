@@ -32,3 +32,5 @@ export { default as dots } from './dots.svg';
 export { default as eye } from './eye.svg';
 export { default as potrait } from './potrait.svg';
 export { default as blackuser } from './blackuser.svg';
+export { default as star } from './star.svg';
+export { default as starEmpty } from './star-empty.svg';

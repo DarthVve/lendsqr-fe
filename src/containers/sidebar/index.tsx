@@ -4,10 +4,11 @@ import { SidebarSection } from '../../components';
 import { customers, businesses, settings } from './sidebarData';
 
 interface SidebarProps { 
-    tabRef: any;
-}
+    onClick: () => void;
+};
 
-const Sidebar = ({tabRef}: SidebarProps) => {
+
+const Sidebar = ({onClick}: SidebarProps) => {
     return (
         <section className='sidebar'>
             <div className='organisation-select'>
@@ -20,9 +21,9 @@ const Sidebar = ({tabRef}: SidebarProps) => {
                 <p className='sidebar-text'>Dashboard</p>
             </div>
             <>
-                <SidebarSection tabs={customers} heading='CUSTOMERS' tabRef={tabRef} />
-                <SidebarSection tabs={businesses} heading='BUSINESSES' tabRef={tabRef} />
-                <SidebarSection tabs={settings} heading='SETTINGS' tabRef={tabRef} />
+                <SidebarSection tabs={customers} heading='CUSTOMERS' onClick={onClick} />
+                <SidebarSection tabs={businesses} heading='BUSINESSES' onClick={onClick} />
+                <SidebarSection tabs={settings} heading='SETTINGS' onClick={onClick} />
             </>
         </section>
     )

@@ -21,5 +21,32 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+
+        .sb-dashboard-active {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #213F7D;
+            background: #39cdcd19;
+            
+
+            &::before {
+                content: '';
+                width: 3px;
+                height: 100%;
+                background: #39CDCC;
+            }
+
+            .sidebar-icon {
+                width: initial;
+                height: initial;
+            }
+        }
     }
 };

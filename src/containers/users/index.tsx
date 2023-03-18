@@ -1,12 +1,16 @@
 import './users.scss';
 import { UserStats, UserInfo } from '../../components';
 
-const Users = () => {
+interface UserProps {
+    onClick: () => void;
+};
+
+const Users = ({onClick}: UserProps) => {
     return (
         <section className='users'>
-            <p className='users-header-text'>Users</p>
+            <h3 className='users-header-text'>Users</h3>
             <UserStats />
-            <UserInfo />
+            <UserInfo onClick={onClick}/>
         </section>
     )
 };

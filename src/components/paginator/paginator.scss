@@ -1,0 +1,46 @@
+.paginator { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: translateY(-25px);
+
+    .paginator-row {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+
+        .paginator-text {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #545F7D;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .paginator-active {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #545F7D;
+        }
+
+        .paginator-select {
+            background: rgba(33, 63, 125, 0.1);
+            border-radius: 4px;
+            height: 30px;
+            padding-right: 19px;
+            cursor: pointer;
+        }
+
+        .paginator-btn {
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+};

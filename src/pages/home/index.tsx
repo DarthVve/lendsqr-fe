@@ -1,4 +1,4 @@
-import './home.scss'
+import './home.scss';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { logo, pablo } from '../../assets/images';

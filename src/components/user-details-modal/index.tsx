@@ -1,10 +1,18 @@
 import './userDetailsModal.scss';
 import { eye, potrait, blackuser } from '../../assets/icons';
 
-const UserDetailsModal = () => {
+interface UserDetailsModalProps {
+    onClick: () => void;
+};
+
+const UserDetailsModal = ({ onClick }: UserDetailsModalProps) => {
+    const handleClick = (): void => {
+        onClick();
+    };
+
     return (
         <div className='user-details-modal'>
-            <div className='udm-menu-option'>
+            <div className='udm-menu-option' onClick={handleClick}>
                 <img src={eye} alt='View Detail Eyecon' loading='lazy' />
                 <p>View Details</p>
             </div>

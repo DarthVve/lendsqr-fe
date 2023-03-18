@@ -1,33 +1,137 @@
 import './information.scss';
-import { dots } from '../../assets/icons';
 
 const Information = () => {
     return (
-        <div className='information'>
-            <div className='info'>
-                <p className='info-content'>testing</p>
+        <>
+            <div className='information'>
+                <h5 className='info-heading'>Personal Information</h5>
+                <div className='info'>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                </div>
             </div>
-            <div className='info-1'>
-                <p className='info-content'>testing</p>
+            <hr className='info-border'/>
+            {/* <div className='information'>
+                <h5 className='info-heading'>testing</h5>
+                <div className='info'>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                </div>
             </div>
-            <div className='info-2'>
-                <p className='info-content'>testing</p>
+            <hr className='info-border'/>
+            <div className='information'>
+                <h5 className='info-heading'>testing</h5>
+                <div className='info'>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                </div>
             </div>
-            <div className='info-3'>
-                <p className='info-content'>testing</p>
+            <hr className='info-border'/>
+            <div className='information'>
+                <h5 className='info-heading'>testing</h5>
+                <div className='info'>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                    <div className='more-info'>
+                        <p className='info-head'>testing</p>
+                        <p className='info-text'>testing</p>
+                    </div>
+                </div>
             </div>
-            <div className='info-4'>
-                <p className='info-content'>testing</p>
-            </div>
-            <div className='info-5'>
-                <p className='info-content'>testing</p>
-            </div>
-            <div className='more-info'>
-                <img src={dots} alt='User details sub-menu icon' loading='lazy'/>
-            </div>
-
-
-        </div>
+            <hr className='info-border'/> */}
+        </>
     )
 };
 
