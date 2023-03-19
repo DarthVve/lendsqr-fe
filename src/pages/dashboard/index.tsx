@@ -1,8 +1,9 @@
 import './dashboard.scss';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Navbar } from '../../components';
 import { Sidebar, Users, UserDetails } from '../../containers';
 import { BsWindow, BsWindowSidebar } from 'react-icons/Bs'
+import { getUserData } from '../../components/user-info/userDataFetch';
 
 const Dashboard = () => {
     const [showUserDetails, setShowUserDetails] = useState(false);
@@ -30,6 +31,10 @@ const Dashboard = () => {
         openSidebarEl.style.display = 'block';
         closeSidebarEl.style.display = 'none';
     };
+
+    useEffect(() => {
+        getUserData()
+    }, []);
 
     return (
         <div className='dashboard'>
