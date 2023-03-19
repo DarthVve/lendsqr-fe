@@ -5,6 +5,10 @@
     padding: 60px;
     gap: 40px;
 
+    @media screen and (max-width: 1280px) {
+        padding: 30px;
+    }
+
     .users-header-text {
         font-family: 'Work Sans';
         font-style: normal;
