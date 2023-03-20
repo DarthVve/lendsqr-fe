@@ -12,8 +12,16 @@
     z-index: 3;
     border-radius: 4px;
     padding: 20px 21px;
-    transform: translateY(-130%) translateX(608%);
+    transform: translateY(-130%) translateX(614%);
     position: absolute;
+
+    @media screen and (max-width: 1440px) {
+        transform: translateY(-180px) translateX(850px);
+    }
+
+    @media screen and (max-width: 1320px) {
+        transform: translateY(-180px) translateX(700px);
+    }
 
     .udm-menu-option {
         box-sizing: border-box;

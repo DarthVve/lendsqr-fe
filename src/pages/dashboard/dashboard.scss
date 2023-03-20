@@ -4,5 +4,23 @@
     .dashboard-content {
         display: flex;
         flex-direction: row;
+
+        .open-sidebar {
+            display: none;
+            cursor: pointer;
+
+            @media screen and (max-width: 1024px) {
+                display: block;
+            }
+        }
+
+        .close-sidebar {
+            display: none;
+            cursor: pointer
+        }
     }
 };
+
+.none {
+    display: none;
+}

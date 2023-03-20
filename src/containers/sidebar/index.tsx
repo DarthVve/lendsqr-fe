@@ -5,12 +5,13 @@ import { customers, businesses, settings } from './sidebarData';
 
 interface SidebarProps { 
     onClick: () => void;
+    ref: React.RefObject<HTMLElement>;
 };
 
 
-const Sidebar = ({onClick}: SidebarProps) => {
+const Sidebar = ({onClick, ref}: SidebarProps) => {
     return (
-        <section className='sidebar'>
+        <section className='sidebar' ref={ref}>
             <div className='organisation-select'>
                 <img src={organization} alt='Switch Organisation Tab Icon' loading='lazy' />
                 <p className='os-text'>Switch Organisation</p>

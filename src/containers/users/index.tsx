@@ -10,7 +10,7 @@ const Users = ({onClick}: UserProps) => {
         <section className='users'>
             <h3 className='users-header-text'>Users</h3>
             <UserStats />
-            <UserInfo onClick={onClick}/>
+            <UserInfo onClick={onClick} />
         </section>
     )
 };

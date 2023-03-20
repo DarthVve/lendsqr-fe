@@ -3,12 +3,15 @@ import { useState } from 'react';
 import { avatar, backBtn } from '../../assets/images';
 import { star, starEmpty } from '../../assets/icons';
 import { Information } from '../../components';
+import { user } from '../../components/user-details-modal';
 
 interface UserDetailsProps {
     onClick: () => void;
+    id: string;
 };
 
-const UserDetails = ({ onClick }: UserDetailsProps) => {
+const UserDetails = ({ id, onClick }: UserDetailsProps) => {
+    const [userData] = useState(user);
     const [activeTab, setActiveTab] = useState(0);
     const [userDetailsNavTabs] = useState(["General Details", "Documents", "Bank Details", "Loans", "Savings", "App and System"]);
     const handleClick = (): void => {
@@ -31,8 +34,8 @@ const UserDetails = ({ onClick }: UserDetailsProps) => {
                 <div className='uh-1'>
                     <img className='uh-avatar' src={avatar} alt='User Avatar' loading='lazy'/>
                     <div className='uh-1-info'>
-                        <p className='uh-1-info-text'>Grace Effiom</p>
-                        <p className='uh-1-info-text_1'>LSQF1587y90</p>
+                        <p className='uh-1-info-text'>{userData.profile.firstName} {userData.profile.lastName}</p>
+                        <p className='uh-1-info-text_1'>{userData.accountNumber}</p>
                     </div>
                     <hr/>
                     <div className='uh-1-info'>
@@ -45,7 +48,7 @@ const UserDetails = ({ onClick }: UserDetailsProps) => {
                     </div>
                     <hr/>
                     <div className='uh-1-info'>
-                        <p className='uh-1-info-text'>&#x20A6;200,000.00</p>
+                        <p className='uh-1-info-text'>&#x20A6;{userData.accountBalance}</p>
                         <p className='uh-1-info-text_3'>9912345678/Providus Bank</p>
                     </div>
                 </div>
