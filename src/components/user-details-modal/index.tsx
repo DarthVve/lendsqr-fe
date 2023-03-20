@@ -1,15 +1,30 @@
 import './userDetailsModal.scss';
+import { useState } from 'react';
 import { eye, potrait, blackuser } from '../../assets/icons';
+import { useEffect } from 'react';
+import { getUserData } from '../user-info/userDataFetch';
 
 interface UserDetailsModalProps {
     onClick: () => void;
     id: string;
 };
 
+export let user: any = {};
+
 const UserDetailsModal = ({ id, onClick }: UserDetailsModalProps) => {
+
     const handleClick = (): void => {
         onClick();
     };
+
+    useEffect(() => { 
+        const fetchData = async () => {
+            const userData = await getUserData(id);
+            user = userData;
+        }
+
+        fetchData();
+    }, []);
 
     return (
         <div className='user-details-modal'>

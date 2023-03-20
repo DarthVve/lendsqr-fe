@@ -3,13 +3,14 @@ import { useState, useRef, useEffect } from 'react';
 import { Navbar } from '../../components';
 import { Sidebar, Users, UserDetails } from '../../containers';
 import { BsWindow, BsWindowSidebar } from 'react-icons/Bs'
-import { getUserData } from '../../components/user-info/userDataFetch';
+import { getUsersData } from '../../components/user-info/userDataFetch';
 
 const Dashboard = () => {
     const [showUserDetails, setShowUserDetails] = useState(false);
     const sidebarRef = useRef<HTMLElement | null>(null);
     const openSidebarEl = document.getElementsByClassName('open-sidebar')[0] as HTMLElement;
     const closeSidebarEl = document.getElementsByClassName('close-sidebar')[0] as HTMLElement;
+    const [id, setId] = useState<string>('');
 
     const handleShowUserDetails = () => {
         setShowUserDetails(true);
@@ -33,7 +34,7 @@ const Dashboard = () => {
     };
 
     useEffect(() => {
-        getUserData()
+        getUsersData()
     }, []);
 
     return (
@@ -48,9 +49,9 @@ const Dashboard = () => {
                     <BsWindow size={25}/>
                 </div>
                 {showUserDetails ? (
-                    <UserDetails onClick={handleShowUsers} />
+                    <UserDetails id={id} onClick={handleShowUsers} />
                 ) : (
-                    <Users onClick={handleShowUserDetails} />
+                        <Users onClick={handleShowUserDetails} />
                 )}
             </div>
         </div>

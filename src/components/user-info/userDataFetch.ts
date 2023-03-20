@@ -1,6 +1,7 @@
 import axios from '../../api';
 
-export const getUserData = async (): Promise<void> => {
+//Makes the api call to get the users data and stores it in indexedDB
+export const getUsersData = async (): Promise<void> => {
     try {
         const response = await axios.get('/users');
 
@@ -25,7 +26,7 @@ export const getUserData = async (): Promise<void> => {
     }
 };
 
-
+//Gets the users data from indexedDB
 export const getUsersFromIndexedDB = async (): Promise<any[]> => {
     try {
         if (!('indexedDB' in window)) {
@@ -68,5 +69,17 @@ export const getUsersFromIndexedDB = async (): Promise<any[]> => {
     } catch (error) {
         console.error(error);
         return [];
+    }
+};
+
+
+//Gets the user data from the api
+export const getUserData = async (id: string) => {
+    try {
+        const response = await axios.get(`/users/${id}`);
+        return response.data;
+    } catch (error) {
+        console.error(error);
+        return {};
     }
 };

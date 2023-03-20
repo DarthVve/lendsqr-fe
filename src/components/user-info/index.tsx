@@ -12,7 +12,7 @@ interface UserInfoProps {
 }
 
 
-const UserInfo = ({ onClick }: UserInfoProps) => {
+const UserInfo = ({onClick}: UserInfoProps) => {
     const [userInfoHead] = useState<string[]>(['organisation', 'usernames', 'email', 'phone number', 'date joined', 'status']);
     const [showFilterModal, setShowFilterModal] = useState(userInfoHead.map(() => false));
     const filterRefs = useRef<(HTMLImageElement | null)[]>(new Array(userInfoHead.length).fill(null));
@@ -107,7 +107,7 @@ const UserInfo = ({ onClick }: UserInfoProps) => {
                                             <p className='info-content'>{user.email}</p>
                                         </td>
                                         <td>
-                                            <p className='info-content'>{user.phoneNumber}</p>
+                                            <p className='info-content'>{user.profile.phoneNumber}</p>
                                         </td>
                                         <td>
                                             <p className='info-content'>{formatDate(user.createdAt)}</p>
@@ -119,7 +119,7 @@ const UserInfo = ({ onClick }: UserInfoProps) => {
                                             <img className='user-details-btn' src={dots} alt='View user details icon' loading='lazy' ref={(elem) => (userDetailsModalRefs.current[index] = elem)} onClick={() => handleUserDetailsModal(index)}/>
                                         </td>
                                     </tr>
-                                    {showUserDetailsModal[index] && userDetailsModalRefs?.current[index] && <UserDetailsModal id={user.id} onClick={onClick}/>}
+                                    {showUserDetailsModal[index] && userDetailsModalRefs?.current[index] && <UserDetailsModal id={user.id} onClick={onClick} />}
                                 </React.Fragment>
                             )
                         })}
