@@ -2,7 +2,7 @@ import './dashboard.scss';
 import { useState, useRef, useEffect } from 'react';
 import { Navbar } from '../../components';
 import { Sidebar, Users, UserDetails } from '../../containers';
-import { BsWindow, BsWindowSidebar } from 'react-icons/Bs';
+// import { BsWindow, BsWindowSidebar } from 'react-icons/Bs';
 import { getUsersData } from '../../components/user-info/userDataFetch';
 
 const Dashboard = () => {
@@ -41,13 +41,13 @@ const Dashboard = () => {
         <div className='dashboard'>
             <Navbar />
             <div className='dashboard-content'>
-                <div className='open-sidebar' onClick={handleOpenSidebar}>
+                {/* <div className='open-sidebar' onClick={handleOpenSidebar}>
                     <BsWindowSidebar size={25}/>
-                </div>
+                </div> */}
                 <Sidebar onClick={handleShowUsers} ref={sidebarRef}/>
-                <div className='close-sidebar' onClick={handleCloseSidebar}>
+                {/* <div className='close-sidebar' onClick={handleCloseSidebar}>
                     <BsWindow size={25}/>
-                </div>
+                </div> */}
                 {showUserDetails ? (
                     <UserDetails id={id} onClick={handleShowUsers} />
                 ) : (
