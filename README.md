@@ -1,15 +1,18 @@
 # Lendsqr FE Test
 
-This is frontend application which employs React, Typescript, SCSS using Vite. It serves as an admin dashboard for a fintech company. It utilizes an  API that facilitates getting  
-dummy customer data to populate the dashboard.
+This is frontend application which employs React, Typescript, SCSS using Vite. It serves as an admin dashboard for a fintech company.
 
 ## API Documentation
 
-The user routes facilitates, creating a user account, logging in and logging out a user,
-generating a payment link for users to fund their account, and user wallet debit.
+It utilizes an API that facilitates getting  
+dummy customer data, which is used to populate the dashboard. The API
+just has two routes.
 
-[Get All Users](https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users)
-[Get A User](https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/:id)
+[Get All Users](https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users) This returns all the users/customers using the app per say. The data comes in as an array of 100 user objects
+
+AND
+
+[Get A User](https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/:id) This returns data for a single user taking and id as a parameter.
 
 ## Environment Variables
 
