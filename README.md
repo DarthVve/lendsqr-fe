@@ -64,6 +64,16 @@ This project was deployed on Vercel. Here is the link to the base url.
 
 <https://majoroh-oshevire-lendsqr-fe-test.vercel.app/>
 
+## Usage
+
+To run a production build run the command
+
+```bash
+    yarn build
+```
+
+When the server starts simply click on login to access the dashboard as this is a mock application. Have fun playing around the dashboard.
+
 ## Authors
 
 - [Vve](https://www.linkedin.com/in/viremaj)
