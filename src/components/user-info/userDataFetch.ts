@@ -34,7 +34,7 @@ export const getUsersFromIndexedDB = async (): Promise<any[]> => {
             return [];
         }
 
-        const lendsqrDb = window.indexedDB.open('myDatabase', 1);
+        const lendsqrDb = window.indexedDB.open('lendsqr-client-Database', 1);
         lendsqrDb.onerror = () => {
             console.log('Failed to open IndexedDB database.');
         };
